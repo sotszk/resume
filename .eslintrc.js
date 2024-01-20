@@ -8,6 +8,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    project: "./tsconfig.json",
   },
   overrides: [
     {
@@ -21,7 +22,17 @@ module.exports = {
     },
     {
       files: ["*.ts", "*.tsx"],
+      extends: ["plugin:react/recommended", "plugin:react/jsx-runtime"],
       parser: "@typescript-eslint/parser",
+      settings: {
+        react: {
+          version: "detect",
+        },
+      },
+      rules: {
+        "react/no-unescaped-entities": "off",
+        "react/jsx-uses-react": "on",
+      },
     },
   ],
 };
