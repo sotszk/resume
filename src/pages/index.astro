@@ -22,7 +22,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Hello!</h1>
+      <h1>こんにちは</h1>
 
       <p>
         AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
@@ -30,6 +30,14 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         out of the box. Light and dark mode are supported by default. Moreover,
         additional color schemes can also be configured.
       </p>
+
+      <p>
+        <b>
+          AstroPaper はミニマルで柔軟かつアクセシブル、そして SEOフレンドリーな
+          Astro の Blog テーマです。
+        </b>
+      </p>
+
       <p>
         Read the blog posts or check
         <LinkButton
@@ -122,6 +130,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   #hero p {
     @apply my-2;
+  }
+  #hero p:has(b) {
+    @apply text-blue-500;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;

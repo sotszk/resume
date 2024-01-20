@@ -1,6 +1,6 @@
 import { SITE } from "@config";
 
-export default () => {
+export default function Site() {
   return (
     <div
       style={{
@@ -84,4 +84,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

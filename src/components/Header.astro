@@ -56,7 +56,10 @@ const { activeNav } = Astro.props;
         </button>
         <ul id="menu-items" class="display-none sm:flex">
           <li>
-            <a href="/resume/posts" class={activeNav === "posts" ? "active" : ""}>
+            <a
+              href="/resume/posts"
+              class={activeNav === "posts" ? "active" : ""}
+            >
               Posts
             </a>
           </li>
@@ -66,7 +69,10 @@ const { activeNav } = Astro.props;
             </a>
           </li>
           <li>
-            <a href="/resume/about" class={activeNav === "about" ? "active" : ""}>
+            <a
+              href="/resume/about"
+              class={activeNav === "about" ? "active" : ""}
+            >
               About
             </a>
           </li>
