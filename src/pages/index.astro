@@ -7,6 +7,7 @@ import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
+import HelloWorld from "@components/HelloWorld.vue";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
 
@@ -23,6 +24,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <section id="hero">
       <h1>こんにちは</h1>
+
+      <HelloWorld client:load />
 
       <p>
         AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro

@@ -29,5 +29,9 @@ module.exports = {
       parser: "@typescript-eslint/parser",
       rules: {},
     },
+    {
+      files: ["*.vue"],
+      extends: ["plugin:vue/vue3-essential"],
+    },
   ],
 };
