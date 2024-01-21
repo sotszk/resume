@@ -27,7 +27,9 @@ module.exports = {
       files: ["*.ts", "*.tsx"],
       extends: [],
       parser: "@typescript-eslint/parser",
-      rules: {},
+      rules: {
+        "@typescript-eslint/triple-slash-reference": "off",
+      },
     },
     {
       files: ["*.vue"],
