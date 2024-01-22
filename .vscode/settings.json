@@ -1,6 +1,5 @@
 {
   "prettier.documentSelectors": ["**/*.astro"],
-  "[astro]": {
-    "editor.formatOnSave": true
-  }
+  "[astro]": {},
+  "[vue]": {}
 }

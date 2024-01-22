@@ -15,6 +15,12 @@
       "options": {
         "parser": "astro"
       }
+    },
+    {
+      "files": "*.vue",
+      "options": {
+        "parser": "vue"
+      }
     }
   ]
 }
